@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginView</class>
+ <widget class="QWidget" name="LoginView">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>1456</width><height>1080</height></rect>
+  </property>
+  <property name="windowTitle"><string>G-SmartClass - Login</string></property>
+  <property name="minimumSize"><size><width>1100</width><height>780</height></size></property>
+  <property name="styleSheet">
+   <string notr="true">
+QWidget#LoginView { background-color:#FFFFFF; font-family:'Poppins'; }
+QFrame#topBar { background-color:#FFFFFF; border-bottom:1px solid #E5E7EB; }
+QFrame#leftPanel { background-color:#EAF1FE; }
+QFrame#authCard { background-color:#FFFFFF; border-radius:20px; border:1px solid #EEF1F6; }
+QFrame#featureItemMaterial QLabel#iconFeatureMaterial, QFrame#featureItemCollab QLabel#iconFeatureCollab, QFrame#featureItemProgress QLabel#iconFeatureProgress { border-radius:10px; }
+QLabel#lblAppName { font-size:16px; font-weight:600; color:#111827; }
+QLabel#lblBrandName { font-size:26px; font-weight:700; }
+QLabel#lblTagline { font-size:13px; font-weight:600; }
+QLabel#lblHeadline { font-size:30px; font-weight:700; color:#0F172A; }
+QLabel#lblHeadlineDesc { font-size:14px; color:#475569; }
+QLabel#lblCardTitle { font-size:24px; font-weight:700; color:#0F172A; }
+QLabel#lblCardSubtitle { font-size:13px; color:#64748B; }
+QPushButton[role="loginTab"] { background:transparent; border:none; border-bottom:2px solid transparent; font-size:14px; font-weight:600; color:#64748B; padding-bottom:10px; }
+QPushButton[role="loginTab"]:checked { color:#2563EB; border-bottom:2px solid #2563EB; }
+QLabel[role="fieldLabel"] { font-size:13px; font-weight:600; color:#374151; }
+QLineEdit { min-height:46px; border:1px solid #E2E8F0; border-radius:10px; padding:0 12px; font-size:14px; color:#0F172A; background:#FFFFFF; }
+QLineEdit:focus { border:1px solid #2563EB; }
+QPushButton#btnTogglePassword { background:transparent; border:none; }
+QPushButton#btnForgotPassword { background:transparent; border:none; color:#2563EB; font-size:13px; font-weight:600; }
+QPushButton#btnLogin { background-color:#2563EB; color:#FFFFFF; font-size:15px; font-weight:600; border-radius:12px; min-height:50px; }
+QPushButton#btnLogin:hover { background-color:#1D4ED8; }
+QPushButton#btnLoginGoogle, QPushButton#btnLoginMicrosoft, QPushButton#btnLoginApple { background-color:#FFFFFF; color:#0F172A; font-size:14px; font-weight:600; border:1px solid #E2E8F0; border-radius:10px; min-height:48px; }
+QPushButton#btnLoginGoogle:hover, QPushButton#btnLoginMicrosoft:hover, QPushButton#btnLoginApple:hover { background-color:#F8FAFC; }
+QPushButton#btnGoToRegister, QPushButton#btnHelp { background:transparent; border:none; color:#2563EB; font-size:13px; font-weight:600; }
+QPushButton#btnMinimize, QPushButton#btnMaximize, QPushButton#btnClose { background:transparent; border:none; font-size:14px; color:#374151; }
+QPushButton#btnClose:hover { background-color:#FEE2E2; border-radius:6px; }
+QPushButton#btnThemeDark, QPushButton#btnThemeLight { background:transparent; border:none; font-size:16px; }
+QLabel#lblSecureBadge, QLabel#lblVersion { font-size:12px; color:#2563EB; font-weight:600; }
+QLabel#lblNoAccount { font-size:13px; color:#64748B; }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="rootLayout">
+   <property name="spacing"><number>0</number></property>
+   <property name="leftMargin"><number>0</number></property>
+   <property name="topMargin"><number>0</number></property>
+   <property name="rightMargin"><number>0</number></property>
+   <property name="bottomMargin"><number>0</number></property>
+   <item>
+    <widget class="QFrame" name="topBar">
+     <property name="minimumSize"><size><width>0</width><height>56</height></size></property>
+     <property name="maximumSize"><size><width>16777215</width><height>56</height></size></property>
+     <layout class="QHBoxLayout" name="topBarLayout">
+      <property name="leftMargin"><number>24</number></property>
+      <property name="rightMargin"><number>24</number></property>
+      <item><widget class="QLabel" name="lblLogoIcon"><property name="minimumSize"><size><width>26</width><height>26</height></size></property><property name="maximumSize"><size><width>26</width><height>26</height></size></property><property name="pixmap"><pixmap>:/assets/logo/gsmartclass_mark.png</pixmap></property><property name="scaledContents"><bool>true</bool></property></widget></item>
+      <item><widget class="QLabel" name="lblAppName"><property name="text"><string>G-SmartClass</string></property></widget></item>
+      <item><spacer name="topBarSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+      <item><widget class="QPushButton" name="btnMinimize"><property name="minimumSize"><size><width>32</width><height>32</height></size></property><property name="text"><string>—</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnMaximize"><property name="minimumSize"><size><width>32</width><height>32</height></size></property><property name="text"><string>☐</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnClose"><property name="minimumSize"><size><width>32</width><height>32</height></size></property><property name="text"><string>✕</string></property></widget></item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="contentArea">
+     <layout class="QHBoxLayout" name="contentAreaLayout">
+      <property name="spacing"><number>0</number></property>
+      <property name="leftMargin"><number>0</number></property>
+      <property name="topMargin"><number>0</number></property>
+      <property name="rightMargin"><number>0</number></property>
+      <property name="bottomMargin"><number>0</number></property>
+      <item>
+       <widget class="QFrame" name="leftPanel">
+        <property name="minimumSize"><size><width>520</width><height>0</height></size></property>
+        <layout class="QVBoxLayout" name="leftPanelLayout">
+         <property name="leftMargin"><number>64</number></property>
+         <property name="topMargin"><number>40</number></property>
+         <property name="rightMargin"><number>48</number></property>
+         <property name="bottomMargin"><number>32</number></property>
+         <property name="spacing"><number>10</number></property>
+         <item><widget class="QLabel" name="lblLogoBig"><property name="minimumSize"><size><width>120</width><height>120</height></size></property><property name="maximumSize"><size><width>120</width><height>120</height></size></property><property name="pixmap"><pixmap>:/assets/logo/gsmartclass_mark.png</pixmap></property><property name="scaledContents"><bool>true</bool></property><property name="alignment"><set>Qt::AlignHCenter</set></property></widget></item>
+         <item><widget class="QLabel" name="lblBrandName"><property name="text"><string>&lt;span style=&quot;color:#2563EB;&quot;&gt;G&lt;/span&gt;&lt;span style=&quot;color:#0F172A;&quot;&gt;-SmartClass&lt;/span&gt;</string></property><property name="textFormat"><enum>Qt::RichText</enum></property><property name="alignment"><set>Qt::AlignHCenter</set></property></widget></item>
+         <item><widget class="QLabel" name="lblTagline"><property name="text"><string>&lt;span style=&quot;color:#2563EB;&quot;&gt;Learn Smarter.&lt;/span&gt; &lt;span style=&quot;color:#10B981;&quot;&gt;Anywhere.&lt;/span&gt; &lt;span style=&quot;color:#7C3AED;&quot;&gt;Anytime.&lt;/span&gt;</string></property><property name="textFormat"><enum>Qt::RichText</enum></property><property name="alignment"><set>Qt::AlignHCenter</set></property></widget></item>
+         <item><spacer name="spacerAfterBrand"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>28</height></size></property></spacer></item>
+         <item>
+          <widget class="QLabel" name="lblHeadline">
+           <property name="text"><string>Belajar lebih cerdas, masa depan lebih &lt;span style=&quot;color:#2563EB;&quot;&gt;cerah.&lt;/span&gt;</string></property>
+           <property name="textFormat"><enum>Qt::RichText</enum></property>
+           <property name="wordWrap"><bool>true</bool></property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lblHeadlineDesc">
+           <property name="text"><string>Platform pembelajaran terintegrasi untuk siswa, guru, dan sekolah dalam satu ekosistem.</string></property>
+           <property name="wordWrap"><bool>true</bool></property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="featuresContainer">
+           <layout class="QVBoxLayout" name="featuresLayout">
+            <property name="spacing"><number>12</number></property>
+            <property name="leftMargin"><number>0</number></property>
+            <property name="topMargin"><number>10</number></property>
+            <property name="rightMargin"><number>0</number></property>
+            <property name="bottomMargin"><number>0</number></property>
+            <item>
+             <widget class="QFrame" name="featureItemMaterial">
+              <property name="styleSheet"><string notr="true">background-color:#FFFFFF; border-radius:12px;</string></property>
+              <layout class="QHBoxLayout" name="featureMaterialLayout">
+               <property name="leftMargin"><number>14</number></property><property name="topMargin"><number>12</number></property><property name="rightMargin"><number>14</number></property><property name="bottomMargin"><number>12</number></property>
+               <item><widget class="QLabel" name="iconFeatureMaterial"><property name="minimumSize"><size><width>44</width><height>44</height></size></property><property name="maximumSize"><size><width>44</width><height>44</height></size></property><property name="styleSheet"><string notr="true">background-color:#DBEAFE;</string></property><property name="pixmap"><pixmap>:/assets/icon/lucide_book_open.png</pixmap></property><property name="scaledContents"><bool>true</bool></property></widget></item>
+               <item>
+                <layout class="QVBoxLayout" name="featureMaterialTextLayout">
+                 <property name="spacing"><number>2</number></property>
+                 <item><widget class="QLabel" name="lblFeatureMaterialTitle"><property name="text"><string>Akses Materi Lengkap</string></property><property name="styleSheet"><string notr="true">font-weight:600; color:#111827; font-size:13px;</string></property></widget></item>
+                 <item><widget class="QLabel" name="lblFeatureMaterialDesc"><property name="text"><string>Dapatkan materi pembelajaran kapan saja di mana saja.</string></property><property name="wordWrap"><bool>true</bool></property><property name="styleSheet"><string notr="true">color:#64748B; font-size:12px;</string></property></widget></item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="featureItemCollab">
+              <property name="styleSheet"><string notr="true">background-color:#FFFFFF; border-radius:12px;</string></property>
+              <layout class="QHBoxLayout" name="featureCollabLayout">
+               <property name="leftMargin"><number>14</number></property><property name="topMargin"><number>12</number></property><property name="rightMargin"><number>14</number></property><property name="bottomMargin"><number>12</number></property>
+               <item><widget class="QLabel" name="iconFeatureCollab"><property name="minimumSize"><size><width>44</width><height>44</height></size></property><property name="maximumSize"><size><width>44</width><height>44</height></size></property><property name="styleSheet"><string notr="true">background-color:#D1FAE5;</string></property><property name="pixmap"><pixmap>:/assets/icon/lucide_users.png</pixmap></property><property name="scaledContents"><bool>true</bool></property></widget></item>
+               <item>
+                <layout class="QVBoxLayout" name="featureCollabTextLayout">
+                 <property name="spacing"><number>2</number></property>
+                 <item><widget class="QLabel" name="lblFeatureCollabTitle"><property name="text"><string>Kolaborasi Tanpa Batas</string></property><property name="styleSheet"><string notr="true">font-weight:600; color:#111827; font-size:13px;</string></property></widget></item>
+                 <item><widget class="QLabel" name="lblFeatureCollabDesc"><property name="text"><string>Terhubung dengan guru dan teman dalam satu platform.</string></property><property name="wordWrap"><bool>true</bool></property><property name="styleSheet"><string notr="true">color:#64748B; font-size:12px;</string></property></widget></item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="featureItemProgress">
+              <property name="styleSheet"><string notr="true">background-color:#FFFFFF; border-radius:12px;</string></property>
+              <layout class="QHBoxLayout" name="featureProgressLayout">
+               <property name="leftMargin"><number>14</number></property><property name="topMargin"><number>12</number></property><property name="rightMargin"><number>14</number></property><property name="bottomMargin"><number>12</number></property>
+               <item><widget class="QLabel" name="iconFeatureProgress"><property name="minimumSize"><size><width>44</width><height>44</height></size></property><property name="maximumSize"><size><width>44</width><height>44</height></size></property><property name="styleSheet"><string notr="true">background-color:#EDE9FE;</string></property><property name="pixmap"><pixmap>:/assets/icon/lucide_bar_chart.png</pixmap></property><property name="scaledContents"><bool>true</bool></property></widget></item>
+               <item>
+                <layout class="QVBoxLayout" name="featureProgressTextLayout">
+                 <property name="spacing"><number>2</number></property>
+                 <item><widget class="QLabel" name="lblFeatureProgressTitle"><property name="text"><string>Pantau Perkembangan</string></property><property name="styleSheet"><string notr="true">font-weight:600; color:#111827; font-size:13px;</string></property></widget></item>
+                 <item><widget class="QLabel" name="lblFeatureProgressDesc"><property name="text"><string>Lihat progres belajar dan tingkatkan prestasi setiap hari.</string></property><property name="wordWrap"><bool>true</bool></property><property name="styleSheet"><string notr="true">color:#64748B; font-size:12px;</string></property></widget></item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item><spacer name="spacerBeforeIllustration"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>20</height></size></property></spacer></item>
+         <item><widget class="QLabel" name="lblIllustration"><property name="minimumSize"><size><width>0</width><height>260</height></size></property><property name="maximumSize"><size><width>16777215</width><height>340</height></size></property><property name="pixmap"><pixmap>:/assets/illustration/login_student_desk.png</pixmap></property><property name="alignment"><set>Qt::AlignLeft|Qt::AlignBottom</set></property></widget></item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="rightPanel">
+        <layout class="QVBoxLayout" name="rightPanelOuterLayout">
+         <property name="leftMargin"><number>40</number></property>
+         <property name="topMargin"><number>32</number></property>
+         <property name="rightMargin"><number>40</number></property>
+         <property name="bottomMargin"><number>32</number></property>
+         <item>
+          <widget class="QFrame" name="cardHeader">
+           <layout class="QHBoxLayout" name="cardHeaderLayout">
+            <property name="leftMargin"><number>0</number></property><property name="topMargin"><number>0</number></property><property name="rightMargin"><number>0</number></property><property name="bottomMargin"><number>8</number></property>
+            <item><spacer name="cardHeaderSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+            <item><widget class="QPushButton" name="btnThemeDark"><property name="text"><string>☾</string></property><property name="checkable"><bool>true</bool></property><property name="checked"><bool>true</bool></property></widget></item>
+            <item><widget class="QPushButton" name="btnThemeLight"><property name="text"><string>☀</string></property><property name="checkable"><bool>true</bool></property></widget></item>
+            <item><widget class="QLabel" name="iconLanguage"><property name="text"><string>🌐</string></property></widget></item>
+            <item><widget class="QComboBox" name="cmbLanguage"><item><property name="text"><string>ID</string></property></item><item><property name="text"><string>EN</string></property></item></widget></item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="authCard">
+           <property name="maximumSize"><size><width>680</width><height>16777215</height></size></property>
+           <layout class="QVBoxLayout" name="authCardLayout">
+            <property name="leftMargin"><number>48</number></property>
+            <property name="topMargin"><number>36</number></property>
+            <property name="rightMargin"><number>48</number></property>
+            <property name="bottomMargin"><number>32</number></property>
+            <property name="spacing"><number>16</number></property>
+            <item><widget class="QLabel" name="lblCardTitle"><property name="text"><string>Selamat Datang Kembali!</string></property><property name="alignment"><set>Qt::AlignHCenter</set></property></widget></item>
+            <item><widget class="QLabel" name="lblCardSubtitle"><property name="text"><string>Masuk untuk melanjutkan ke G-SmartClass</string></property><property name="alignment"><set>Qt::AlignHCenter</set></property></widget></item>
+            <item>
+             <layout class="QHBoxLayout" name="loginTabRow">
+              <property name="spacing"><number>24</number></property>
+              <item><spacer name="tabRowSpacerLeft"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>20</height></size></property></spacer></item>
+              <item>
+               <widget class="QPushButton" name="tabEmailLogin">
+                <property name="text"><string>Email</string></property>
+                <property name="checkable"><bool>true</bool></property>
+                <property name="checked"><bool>true</bool></property>
+                <property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="tabQrLogin">
+                <property name="text"><string>QR Code</string></property>
+                <property name="checkable"><bool>true</bool></property>
+                <property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property>
+               </widget>
+              </item>
+              <item><spacer name="tabRowSpacerRight"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>20</height></size></property></spacer></item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QFrame" name="tabUnderline">
+              <property name="minimumSize"><size><width>0</width><height>2</height></size></property>
+              <property name="maximumSize"><size><width>16777215</width><height>2</height></size></property>
+              <property name="styleSheet"><string notr="true">background-color:#E2E8F0;</string></property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QStackedWidget" name="loginStackedWidget">
+              <widget class="QWidget" name="pageEmailLogin">
+               <layout class="QVBoxLayout" name="pageEmailLoginLayout">
+                <property name="leftMargin"><number>0</number></property><property name="topMargin"><number>8</number></property><property name="rightMargin"><number>0</number></property><property name="bottomMargin"><number>0</number></property>
+                <property name="spacing"><number>16</number></property>
+                <item>
+                 <layout class="QVBoxLayout" name="fieldEmailLayout">
+                  <property name="spacing"><number>6</number></property>
+                  <item><widget class="QLabel" name="lblEmailLabel"><property name="text"><string>Email</string></property></widget></item>
+                  <item><widget class="QLineEdit" name="inputEmail"><property name="placeholderText"><string>Masukkan email Anda</string></property></widget></item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="fieldPasswordLayout">
+                  <property name="spacing"><number>6</number></property>
+                  <item><widget class="QLabel" name="lblPasswordLabel"><property name="text"><string>Kata Sandi</string></property></widget></item>
+                  <item>
+                   <layout class="QHBoxLayout" name="passwordRow">
+                    <property name="spacing"><number>4</number></property>
+                    <item><widget class="QLineEdit" name="inputPassword"><property name="echoMode"><enum>QLineEdit::Password</enum></property><property name="placeholderText"><string>Masukkan kata sandi Anda</string></property></widget></item>
+                    <item><widget class="QPushButton" name="btnTogglePassword"><property name="text"><string>👁</string></property><property name="checkable"><bool>true</bool></property></widget></item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="rememberForgotRow">
+                  <property name="leftMargin"><number>0</number></property><property name="topMargin"><number>0</number></property><property name="rightMargin"><number>0</number></property><property name="bottomMargin"><number>0</number></property>
+                  <item><widget class="QCheckBox" name="chkRememberMe"><property name="text"><string>Ingat saya</string></property></widget></item>
+                  <item><spacer name="rememberForgotSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+                  <item><widget class="QPushButton" name="btnForgotPassword"><property name="text"><string>Lupa kata sandi?</string></property></widget></item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btnLogin">
+                  <property name="text"><string>➔  Masuk</string></property>
+                  <property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="dividerRow">
+                  <layout class="QHBoxLayout" name="dividerRowLayout">
+                   <property name="leftMargin"><number>0</number></property><property name="topMargin"><number>0</number></property><property name="rightMargin"><number>0</number></property><property name="bottomMargin"><number>0</number></property>
+                   <item><widget class="QFrame" name="dividerLineLeft"><property name="frameShape"><enum>QFrame::HLine</enum></property></widget></item>
+                   <item><widget class="QLabel" name="lblOr"><property name="text"><string>atau masuk dengan</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+                   <item><widget class="QFrame" name="dividerLineRight"><property name="frameShape"><enum>QFrame::HLine</enum></property></widget></item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="ssoButtonsLayout">
+                  <property name="spacing"><number>10</number></property>
+                  <item><widget class="QPushButton" name="btnLoginGoogle"><property name="text"><string>G  Google</string></property><property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property></widget></item>
+                  <item><widget class="QPushButton" name="btnLoginMicrosoft"><property name="text"><string>⊞  Microsoft</string></property><property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property></widget></item>
+                  <item><widget class="QPushButton" name="btnLoginApple"><property name="text"><string>  Apple</string></property><property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property></widget></item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="pageQrLogin">
+               <layout class="QVBoxLayout" name="pageQrLoginLayout">
+                <property name="leftMargin"><number>0</number></property><property name="topMargin"><number>16</number></property><property name="rightMargin"><number>0</number></property><property name="bottomMargin"><number>0</number></property>
+                <item>
+                 <widget class="QFrame" name="qrFrame">
+                  <property name="minimumSize"><size><width>200</width><height>200</height></size></property>
+                  <property name="maximumSize"><size><width>200</width><height>200</height></size></property>
+                  <property name="styleSheet"><string notr="true">background-color:#FFFFFF; border:2px dashed #2563EB; border-radius:16px;</string></property>
+                  <layout class="QVBoxLayout" name="qrFrameLayout">
+                   <item>
+                    <widget class="QRCodeWidget" name="qrCodeLoginWidget">
+                     <property name="alignment"><set>Qt::AlignCenter</set></property>
+                     <property name="text"><string>[QR CODE]</string></property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="lblQrLoginDesc">
+                  <property name="text"><string>Pindai QR Code ini menggunakan aplikasi G-SmartClass Mobile untuk masuk secara instan.</string></property>
+                  <property name="alignment"><set>Qt::AlignHCenter</set></property>
+                  <property name="wordWrap"><bool>true</bool></property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="registerRow">
+              <layout class="QHBoxLayout" name="registerRowLayout">
+               <property name="leftMargin"><number>0</number></property><property name="topMargin"><number>0</number></property><property name="rightMargin"><number>0</number></property><property name="bottomMargin"><number>0</number></property>
+               <item><spacer name="registerRowSpacerLeft"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+               <item><widget class="QLabel" name="lblNoAccount"><property name="text"><string>Belum punya akun?</string></property></widget></item>
+               <item><widget class="QPushButton" name="btnGoToRegister"><property name="text"><string>Daftar sekarang</string></property></widget></item>
+               <item><spacer name="registerRowSpacerRight"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="cardFooterBadge">
+           <layout class="QHBoxLayout" name="cardFooterBadgeLayout">
+            <property name="topMargin"><number>12</number></property>
+            <item><spacer name="cardFooterSpacerLeft"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+            <item><widget class="QLabel" name="lblSecureBadge"><property name="text"><string>🛡  Aman &amp; Terpercaya</string></property></widget></item>
+            <item><widget class="QLabel" name="lblFooterSeparator"><property name="text"><string>|</string></property></widget></item>
+            <item><widget class="QLabel" name="lblVersion"><property name="text"><string>v1.0.0</string></property></widget></item>
+            <item><spacer name="cardFooterSpacerRight"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QRCodeWidget</class>
+   <extends>QLabel</extends>
+   <header>widgets.qr_code.qr_code_widget</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

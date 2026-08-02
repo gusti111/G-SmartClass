@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PairDeviceView</class>
+ <widget class="QWidget" name="PairDeviceView">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>1456</width><height>1030</height></rect>
+  </property>
+  <property name="windowTitle"><string>G-SmartClass - Pair Device</string></property>
+  <property name="minimumSize"><size><width>1100</width><height>760</height></size></property>
+  <property name="styleSheet">
+   <string notr="true">
+QWidget#PairDeviceView { background-color:#FFFFFF; font-family:'Inter'; }
+QFrame#topBar { background-color:#FFFFFF; border-bottom:1px solid #E5E7EB; }
+QFrame#contentArea { background-color:#F4F7FE; }
+QFrame#authCard { background-color:#FFFFFF; border-radius:20px; border:1px solid #EEF1F6; }
+QFrame#secureNotice { background-color:#F1F5FF; border-radius:12px; border:1px solid #DCE6FF; }
+QFrame#howToNotice { background-color:#F1F5FF; border-radius:12px; border:1px solid #DCE6FF; }
+QFrame#qrTimerBox { background-color:#F1F5FF; border-radius:12px; border:1px solid #DCE6FF; }
+QFrame#qrFrame { background-color:#FFFFFF; border:2px dashed #2563EB; border-radius:16px; }
+QLabel#lblAppName { font-size:16px; font-weight:600; color:#111827; }
+QLabel#lblBrandName { font-size:28px; font-weight:700; }
+QLabel#lblTagline { font-size:13px; font-weight:600; }
+QLabel#lblSectionTitle { font-size:20px; font-weight:700; color:#111827; }
+QLabel#lblSectionDesc { font-size:13px; color:#64748B; }
+QLabel#lblNoticeTitle { font-size:13px; font-weight:700; color:#1E3A8A; }
+QLabel#lblNoticeDesc { font-size:12px; color:#3B5CA8; }
+QLabel#lblIconDevices { font-size:36px; }
+QLabel#lblCardTitle { font-size:22px; font-weight:700; color:#0F172A; }
+QLabel#lblCardSubtitle { font-size:13px; color:#64748B; }
+QPushButton[role="pairTab"] { min-height:40px; border-radius:10px; border:1px solid #E2E8F0; background:#FFFFFF; color:#374151; font-size:13px; font-weight:600; }
+QPushButton[role="pairTab"]:checked { background-color:#EFF3FF; border:1px solid #2563EB; color:#2563EB; }
+QLabel#lblQrTimerCaption { font-size:12px; font-weight:700; color:#1E3A8A; }
+QLabel#lblQrTimerValue { font-size:22px; font-weight:700; color:#2563EB; }
+QLabel#lblQrTimerDesc { font-size:11px; color:#3B5CA8; }
+QPushButton#btnUse6DigitCode { background-color:#FFFFFF; color:#2563EB; font-size:14px; font-weight:600; border:1px solid #2563EB; border-radius:10px; min-height:48px; }
+QLabel#lblHowToTitle { font-size:13px; font-weight:700; color:#1E3A8A; }
+QLabel#lblHowToStep { font-size:12px; color:#3B5CA8; }
+QPushButton#btnBackToLogin, QPushButton#btnHelp { background:transparent; border:none; color:#2563EB; font-size:13px; font-weight:600; }
+QPushButton#btnMinimize, QPushButton#btnMaximize, QPushButton#btnClose { background:transparent; border:none; font-size:14px; color:#374151; }
+QPushButton#btnClose:hover { background-color:#FEE2E2; border-radius:6px; }
+QPushButton[role="themeToggleBtn"] { border:none; border-radius:14px; padding:4px 10px; background:transparent; }
+QPushButton[role="themeToggleBtn"]:checked { background-color:#DBEAFE; }
+QFrame#footerBar { background-color:#FFFFFF; border-top:1px solid #E5E7EB; }
+QLabel#lblCopyright, QLabel#lblVersion { font-size:12px; color:#64748B; }
+QLabel#lblSecureBadge { font-size:12px; font-weight:600; color:#2563EB; }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="rootLayout">
+   <property name="spacing"><number>0</number></property>
+   <property name="leftMargin"><number>0</number></property>
+   <property name="topMargin"><number>0</number></property>
+   <property name="rightMargin"><number>0</number></property>
+   <property name="bottomMargin"><number>0</number></property>
+   <item>
+    <widget class="QFrame" name="topBar">
+     <property name="minimumSize"><size><width>0</width><height>64</height></size></property>
+     <property name="maximumSize"><size><width>16777215</width><height>64</height></size></property>
+     <layout class="QHBoxLayout" name="topBarLayout">
+      <property name="leftMargin"><number>24</number></property>
+      <property name="rightMargin"><number>24</number></property>
+      <item><widget class="QLabel" name="lblLogoIcon"><property name="minimumSize"><size><width>28</width><height>28</height></size></property><property name="maximumSize"><size><width>28</width><height>28</height></size></property><property name="pixmap"><pixmap>:/assets/logo/gsmartclass_mark.png</pixmap></property><property name="scaledContents"><bool>true</bool></property></widget></item>
+      <item><widget class="QLabel" name="lblAppName"><property name="text"><string>G-SmartClass</string></property></widget></item>
+      <item><spacer name="topBarSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+      <item><widget class="QPushButton" name="btnMinimize"><property name="minimumSize"><size><width>32</width><height>32</height></size></property><property name="text"><string>—</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnMaximize"><property name="minimumSize"><size><width>32</width><height>32</height></size></property><property name="text"><string>☐</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnClose"><property name="minimumSize"><size><width>32</width><height>32</height></size></property><property name="text"><string>✕</string></property></widget></item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="contentArea">
+     <layout class="QHBoxLayout" name="contentAreaLayout">
+      <property name="spacing"><number>0</number></property>
+      <property name="leftMargin"><number>0</number></property>
+      <property name="topMargin"><number>0</number></property>
+      <property name="rightMargin"><number>0</number></property>
+      <property name="bottomMargin"><number>0</number></property>
+      <item>
+       <widget class="QFrame" name="leftPanel">
+        <property name="minimumSize"><size><width>420</width><height>0</height></size></property>
+        <layout class="QVBoxLayout" name="leftPanelLayout">
+         <property name="leftMargin"><number>56</number></property>
+         <property name="topMargin"><number>48</number></property>
+         <property name="rightMargin"><number>40</number></property>
+         <property name="bottomMargin"><number>32</number></property>
+         <property name="spacing"><number>10</number></property>
+         <item><widget class="QLabel" name="lblLogoBig"><property name="minimumSize"><size><width>120</width><height>120</height></size></property><property name="maximumSize"><size><width>120</width><height>120</height></size></property><property name="pixmap"><pixmap>:/assets/logo/gsmartclass_mark.png</pixmap></property><property name="scaledContents"><bool>true</bool></property></widget></item>
+         <item><widget class="QLabel" name="lblBrandName"><property name="text"><string>&lt;span style=&quot;color:#2563EB;&quot;&gt;G&lt;/span&gt;&lt;span style=&quot;color:#0F172A;&quot;&gt;-SmartClass&lt;/span&gt;</string></property><property name="textFormat"><enum>Qt::RichText</enum></property></widget></item>
+         <item><widget class="QLabel" name="lblTagline"><property name="text"><string>&lt;span style=&quot;color:#2563EB;&quot;&gt;Learn Smarter.&lt;/span&gt; &lt;span style=&quot;color:#10B981;&quot;&gt;Anywhere.&lt;/span&gt; &lt;span style=&quot;color:#7C3AED;&quot;&gt;Anytime.&lt;/span&gt;</string></property><property name="textFormat"><enum>Qt::RichText</enum></property></widget></item>
+         <item><spacer name="spacerAfterBrand"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>24</height></size></property></spacer></item>
+         <item><widget class="QLabel" name="lblSectionTitle"><property name="text"><string>Hubungkan Perangkat Anda</string></property></widget></item>
+         <item><widget class="QLabel" name="lblSectionDesc"><property name="text"><string>Gunakan QR Code atau kode 6 digit untuk menghubungkan perangkat baru ke akun G-SmartClass Anda dengan aman.</string></property><property name="wordWrap"><bool>true</bool></property></widget></item>
+         <item>
+          <widget class="QFrame" name="secureNotice">
+           <layout class="QHBoxLayout" name="secureNoticeLayout">
+            <property name="leftMargin"><number>16</number></property><property name="topMargin"><number>14</number></property><property name="rightMargin"><number>16</number></property><property name="bottomMargin"><number>14</number></property>
+            <item><widget class="QLabel" name="iconSecureShield"><property name="minimumSize"><size><width>28</width><height>28</height></size></property><property name="maximumSize"><size><width>28</width><height>28</height></size></property><property name="text"><string>🛡</string></property></widget></item>
+            <item>
+             <layout class="QVBoxLayout" name="secureNoticeTextLayout">
+              <property name="spacing"><number>2</number></property>
+              <item><widget class="QLabel" name="lblNoticeTitle"><property name="text"><string>Aman &amp; Terpercaya</string></property></widget></item>
+              <item><widget class="QLabel" name="lblNoticeDesc"><property name="text"><string>Setiap perangkat yang terhubung akan dilindungi dengan enkripsi tingkat tinggi.</string></property><property name="wordWrap"><bool>true</bool></property></widget></item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item><spacer name="spacerBeforeIllustration"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>20</height></size></property></spacer></item>
+         <item><widget class="QLabel" name="lblIllustration"><property name="minimumSize"><size><width>0</width><height>220</height></size></property><property name="maximumSize"><size><width>16777215</width><height>280</height></size></property><property name="pixmap"><pixmap>:/assets/illustration/pair_device_sync.png</pixmap></property><property name="alignment"><set>Qt::AlignLeft|Qt::AlignBottom</set></property></widget></item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="rightPanel">
+        <layout class="QVBoxLayout" name="rightPanelOuterLayout">
+         <property name="leftMargin"><number>40</number></property>
+         <property name="topMargin"><number>32</number></property>
+         <property name="rightMargin"><number>40</number></property>
+         <property name="bottomMargin"><number>32</number></property>
+         <item>
+          <widget class="QFrame" name="authCard">
+           <property name="maximumSize"><size><width>720</width><height>16777215</height></size></property>
+           <layout class="QVBoxLayout" name="authCardLayout">
+            <property name="leftMargin"><number>48</number></property>
+            <property name="topMargin"><number>28</number></property>
+            <property name="rightMargin"><number>48</number></property>
+            <property name="bottomMargin"><number>28</number></property>
+            <property name="spacing"><number>16</number></property>
+            <item>
+             <widget class="QFrame" name="cardHeader">
+              <layout class="QHBoxLayout" name="cardHeaderLayout">
+               <property name="leftMargin"><number>0</number></property><property name="topMargin"><number>0</number></property><property name="rightMargin"><number>0</number></property><property name="bottomMargin"><number>0</number></property>
+               <item><widget class="QPushButton" name="btnBackToLogin"><property name="text"><string>← Kembali ke Login</string></property><property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property></widget></item>
+               <item><spacer name="cardHeaderSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+               <item><widget class="QPushButton" name="btnThemeLight"><property name="text"><string>☀</string></property><property name="checkable"><bool>true</bool></property><property name="checked"><bool>true</bool></property></widget></item>
+               <item><widget class="QPushButton" name="btnThemeDark"><property name="text"><string>☾</string></property><property name="checkable"><bool>true</bool></property></widget></item>
+               <item><widget class="QComboBox" name="cmbLanguage"><item><property name="text"><string>ID</string></property></item><item><property name="text"><string>EN</string></property></item></widget></item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblIconDevices">
+              <property name="text"><string>🖥📱</string></property>
+              <property name="alignment"><set>Qt::AlignHCenter</set></property>
+             </widget>
+            </item>
+            <item><widget class="QLabel" name="lblCardTitle"><property name="text"><string>Pair Device</string></property><property name="alignment"><set>Qt::AlignHCenter</set></property></widget></item>
+            <item>
+             <widget class="QLabel" name="lblCardSubtitle">
+              <property name="text"><string>Pindai QR Code di perangkat lain atau masukkan kode 6 digit untuk menghubungkan perangkat ke akun Anda.</string></property>
+              <property name="alignment"><set>Qt::AlignHCenter</set></property>
+              <property name="wordWrap"><bool>true</bool></property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="pairTabRow">
+              <property name="spacing"><number>10</number></property>
+              <item>
+               <widget class="QPushButton" name="tabQrCode">
+                <property name="text"><string>QR Code</string></property>
+                <property name="checkable"><bool>true</bool></property>
+                <property name="checked"><bool>true</bool></property>
+                <property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="tabSixDigitCode">
+                <property name="text"><string>Kode 6 Digit</string></property>
+                <property name="checkable"><bool>true</bool></property>
+                <property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QStackedWidget" name="pairStackedWidget">
+              <widget class="QWidget" name="pageQrCode">
+               <layout class="QHBoxLayout" name="qrPageLayout">
+                <property name="leftMargin"><number>0</number></property><property name="topMargin"><number>4</number></property><property name="rightMargin"><number>0</number></property><property name="bottomMargin"><number>0</number></property>
+                <property name="spacing"><number>16</number></property>
+                <item>
+                 <widget class="QFrame" name="qrFrame">
+                  <property name="minimumSize"><size><width>220</width><height>220</height></size></property>
+                  <property name="maximumSize"><size><width>220</width><height>220</height></size></property>
+                  <layout class="QVBoxLayout" name="qrFrameLayout">
+                   <item>
+                    <widget class="QRCodeWidget" name="qrCodeWidget">
+                     <property name="alignment"><set>Qt::AlignCenter</set></property>
+                     <property name="text"><string>[QR CODE]</string></property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="qrTimerBox">
+                  <layout class="QVBoxLayout" name="qrTimerBoxLayout">
+                   <property name="leftMargin"><number>16</number></property><property name="topMargin"><number>16</number></property><property name="rightMargin"><number>16</number></property><property name="bottomMargin"><number>16</number></property>
+                   <property name="spacing"><number>4</number></property>
+                   <item><widget class="QLabel" name="lblQrTimerCaption"><property name="text"><string>Kode QR Berlaku Selama</string></property></widget></item>
+                   <item><widget class="QLabel" name="lblQrTimerValue"><property name="text"><string>02:45</string></property></widget></item>
+                   <item><widget class="QLabel" name="lblQrTimerDesc"><property name="text"><string>Untuk keamanan, QR Code akan diperbarui secara otomatis setelah waktu habis.</string></property><property name="wordWrap"><bool>true</bool></property></widget></item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="pageSixDigitCode">
+               <layout class="QVBoxLayout" name="sixDigitPageLayout">
+                <item>
+                 <widget class="QLabel" name="lblSixDigitCode">
+                  <property name="text"><string>123 456</string></property>
+                  <property name="alignment"><set>Qt::AlignCenter</set></property>
+                  <property name="styleSheet"><string notr="true">font-size:32px; font-weight:700; letter-spacing:6px; color:#2563EB;</string></property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="dividerRow">
+              <layout class="QHBoxLayout" name="dividerRowLayout">
+               <property name="leftMargin"><number>0</number></property><property name="topMargin"><number>0</number></property><property name="rightMargin"><number>0</number></property><property name="bottomMargin"><number>0</number></property>
+               <item><widget class="QFrame" name="dividerLineLeft"><property name="frameShape"><enum>QFrame::HLine</enum></property></widget></item>
+               <item><widget class="QLabel" name="lblOr"><property name="text"><string>atau</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+               <item><widget class="QFrame" name="dividerLineRight"><property name="frameShape"><enum>QFrame::HLine</enum></property></widget></item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnUse6DigitCode">
+              <property name="text"><string>⌨  Gunakan Kode 6 Digit</string></property>
+              <property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="howToNotice">
+              <layout class="QVBoxLayout" name="howToNoticeLayout">
+               <property name="leftMargin"><number>16</number></property><property name="topMargin"><number>14</number></property><property name="rightMargin"><number>16</number></property><property name="bottomMargin"><number>14</number></property>
+               <property name="spacing"><number>6</number></property>
+               <item><widget class="QLabel" name="lblHowToTitle"><property name="text"><string>?  Cara Menghubungkan Perangkat</string></property></widget></item>
+               <item><widget class="QLabel" name="lblHowToStep1"><property name="text"><string>1. Buka G-SmartClass di perangkat yang ingin dihubungkan</string></property><property name="wordWrap"><bool>true</bool></property><property name="styleSheet"><string notr="true">font-size:12px; color:#3B5CA8;</string></property></widget></item>
+               <item><widget class="QLabel" name="lblHowToStep2"><property name="text"><string>2. Pilih opsi 'Pair Device'</string></property><property name="wordWrap"><bool>true</bool></property><property name="styleSheet"><string notr="true">font-size:12px; color:#3B5CA8;</string></property></widget></item>
+               <item><widget class="QLabel" name="lblHowToStep3"><property name="text"><string>3. Pindai QR Code ini atau masukkan kode 6 digit</string></property><property name="wordWrap"><bool>true</bool></property><property name="styleSheet"><string notr="true">font-size:12px; color:#3B5CA8;</string></property></widget></item>
+               <item><widget class="QLabel" name="lblHowToStep4"><property name="text"><string>4. Konfirmasi permintaan pada perangkat utama Anda</string></property><property name="wordWrap"><bool>true</bool></property><property name="styleSheet"><string notr="true">font-size:12px; color:#3B5CA8;</string></property></widget></item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="footerBar">
+     <property name="minimumSize"><size><width>0</width><height>48</height></size></property>
+     <property name="maximumSize"><size><width>16777215</width><height>48</height></size></property>
+     <layout class="QHBoxLayout" name="footerBarLayout">
+      <property name="leftMargin"><number>24</number></property>
+      <property name="rightMargin"><number>24</number></property>
+      <item><widget class="QLabel" name="lblVersion"><property name="text"><string>v1.0.0</string></property></widget></item>
+      <item><widget class="QLabel" name="lblCopyright"><property name="text"><string>© 2025 G-SmartClass. All rights reserved.</string></property></widget></item>
+      <item><spacer name="footerBarSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+      <item><widget class="QLabel" name="lblSecureBadge"><property name="text"><string>🛡  Aman &amp; Terpercaya</string></property></widget></item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QRCodeWidget</class>
+   <extends>QLabel</extends>
+   <header>widgets.qr_code.qr_code_widget</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
