@@ -27,8 +27,8 @@ QLabel#lblNoticeDesc { font-size:12px; color:#3B5CA8; }
 QLabel#lblIconDevices { font-size:36px; }
 QLabel#lblCardTitle { font-size:22px; font-weight:700; color:#0F172A; }
 QLabel#lblCardSubtitle { font-size:13px; color:#64748B; }
-QPushButton[role="pairTab"] { min-height:40px; border-radius:10px; border:1px solid #E2E8F0; background:#FFFFFF; color:#374151; font-size:13px; font-weight:600; }
-QPushButton[role="pairTab"]:checked { background-color:#EFF3FF; border:1px solid #2563EB; color:#2563EB; }
+QPushButton#tabQrCode, QPushButton#tabSixDigitCode { min-height:40px; border-radius:10px; border:1px solid #E2E8F0; background:#FFFFFF; color:#374151; font-size:13px; font-weight:600; }
+QPushButton#tabQrCode:checked, QPushButton#tabSixDigitCode:checked { background-color:#EFF3FF; border:1px solid #2563EB; color:#2563EB; }
 QLabel#lblQrTimerCaption { font-size:12px; font-weight:700; color:#1E3A8A; }
 QLabel#lblQrTimerValue { font-size:22px; font-weight:700; color:#2563EB; }
 QLabel#lblQrTimerDesc { font-size:11px; color:#3B5CA8; }
@@ -38,8 +38,8 @@ QLabel#lblHowToStep { font-size:12px; color:#3B5CA8; }
 QPushButton#btnBackToLogin, QPushButton#btnHelp { background:transparent; border:none; color:#2563EB; font-size:13px; font-weight:600; }
 QPushButton#btnMinimize, QPushButton#btnMaximize, QPushButton#btnClose { background:transparent; border:none; font-size:14px; color:#374151; }
 QPushButton#btnClose:hover { background-color:#FEE2E2; border-radius:6px; }
-QPushButton[role="themeToggleBtn"] { border:none; border-radius:14px; padding:4px 10px; background:transparent; }
-QPushButton[role="themeToggleBtn"]:checked { background-color:#DBEAFE; }
+QPushButton#btnThemeLight, QPushButton#btnThemeDark { border:none; border-radius:14px; padding:4px 10px; background:transparent; }
+QPushButton#btnThemeLight:checked, QPushButton#btnThemeDark:checked { background-color:#DBEAFE; }
 QFrame#footerBar { background-color:#FFFFFF; border-top:1px solid #E5E7EB; }
 QLabel#lblCopyright, QLabel#lblVersion { font-size:12px; color:#64748B; }
 QLabel#lblSecureBadge { font-size:12px; font-weight:600; color:#2563EB; }
@@ -58,7 +58,7 @@ QLabel#lblSecureBadge { font-size:12px; font-weight:600; color:#2563EB; }
      <layout class="QHBoxLayout" name="topBarLayout">
       <property name="leftMargin"><number>24</number></property>
       <property name="rightMargin"><number>24</number></property>
-      <item><widget class="QLabel" name="lblLogoIcon"><property name="minimumSize"><size><width>28</width><height>28</height></size></property><property name="maximumSize"><size><width>28</width><height>28</height></size></property><property name="pixmap"><pixmap>:/assets/logo/gsmartclass_mark.png</pixmap></property><property name="scaledContents"><bool>true</bool></property></widget></item>
+      <item><widget class="QLabel" name="lblLogoIcon"><property name="minimumSize"><size><width>28</width><height>28</height></size></property><property name="maximumSize"><size><width>28</width><height>28</height></size></property><property name="pixmap"><pixmap>:/logo/gsmartclass_mark.svg</pixmap></property><property name="scaledContents"><bool>true</bool></property></widget></item>
       <item><widget class="QLabel" name="lblAppName"><property name="text"><string>G-SmartClass</string></property></widget></item>
       <item><spacer name="topBarSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
       <item><widget class="QPushButton" name="btnMinimize"><property name="minimumSize"><size><width>32</width><height>32</height></size></property><property name="text"><string>—</string></property></widget></item>
@@ -84,7 +84,7 @@ QLabel#lblSecureBadge { font-size:12px; font-weight:600; color:#2563EB; }
          <property name="rightMargin"><number>40</number></property>
          <property name="bottomMargin"><number>32</number></property>
          <property name="spacing"><number>10</number></property>
-         <item><widget class="QLabel" name="lblLogoBig"><property name="minimumSize"><size><width>120</width><height>120</height></size></property><property name="maximumSize"><size><width>120</width><height>120</height></size></property><property name="pixmap"><pixmap>:/assets/logo/gsmartclass_mark.png</pixmap></property><property name="scaledContents"><bool>true</bool></property></widget></item>
+         <item><widget class="QLabel" name="lblLogoBig"><property name="minimumSize"><size><width>120</width><height>120</height></size></property><property name="maximumSize"><size><width>120</width><height>120</height></size></property><property name="pixmap"><pixmap>:/logo/gsmartclass_mark.svg</pixmap></property><property name="scaledContents"><bool>true</bool></property></widget></item>
          <item><widget class="QLabel" name="lblBrandName"><property name="text"><string>&lt;span style=&quot;color:#2563EB;&quot;&gt;G&lt;/span&gt;&lt;span style=&quot;color:#0F172A;&quot;&gt;-SmartClass&lt;/span&gt;</string></property><property name="textFormat"><enum>Qt::RichText</enum></property></widget></item>
          <item><widget class="QLabel" name="lblTagline"><property name="text"><string>&lt;span style=&quot;color:#2563EB;&quot;&gt;Learn Smarter.&lt;/span&gt; &lt;span style=&quot;color:#10B981;&quot;&gt;Anywhere.&lt;/span&gt; &lt;span style=&quot;color:#7C3AED;&quot;&gt;Anytime.&lt;/span&gt;</string></property><property name="textFormat"><enum>Qt::RichText</enum></property></widget></item>
          <item><spacer name="spacerAfterBrand"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>24</height></size></property></spacer></item>
@@ -106,7 +106,7 @@ QLabel#lblSecureBadge { font-size:12px; font-weight:600; color:#2563EB; }
           </widget>
          </item>
          <item><spacer name="spacerBeforeIllustration"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>20</height></size></property></spacer></item>
-         <item><widget class="QLabel" name="lblIllustration"><property name="minimumSize"><size><width>0</width><height>220</height></size></property><property name="maximumSize"><size><width>16777215</width><height>280</height></size></property><property name="pixmap"><pixmap>:/assets/illustration/pair_device_sync.png</pixmap></property><property name="alignment"><set>Qt::AlignLeft|Qt::AlignBottom</set></property></widget></item>
+         <item><widget class="QLabel" name="lblIllustration"><property name="minimumSize"><size><width>0</width><height>220</height></size></property><property name="maximumSize"><size><width>16777215</width><height>280</height></size></property><property name="pixmap"><pixmap>:/illustrations/illustration_pair_device.svg</pixmap></property><property name="alignment"><set>Qt::AlignLeft|Qt::AlignBottom</set></property></widget></item>
         </layout>
        </widget>
       </item>

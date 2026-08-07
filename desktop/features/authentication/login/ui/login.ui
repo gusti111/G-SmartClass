@@ -21,9 +21,9 @@ QLabel#lblHeadline { font-size:30px; font-weight:700; color:#0F172A; }
 QLabel#lblHeadlineDesc { font-size:14px; color:#475569; }
 QLabel#lblCardTitle { font-size:24px; font-weight:700; color:#0F172A; }
 QLabel#lblCardSubtitle { font-size:13px; color:#64748B; }
-QPushButton[role="loginTab"] { background:transparent; border:none; border-bottom:2px solid transparent; font-size:14px; font-weight:600; color:#64748B; padding-bottom:10px; }
-QPushButton[role="loginTab"]:checked { color:#2563EB; border-bottom:2px solid #2563EB; }
-QLabel[role="fieldLabel"] { font-size:13px; font-weight:600; color:#374151; }
+QPushButton#tabEmailLogin, QPushButton#tabQrLogin { background:transparent; border:none; border-bottom:2px solid transparent; font-size:14px; font-weight:600; color:#64748B; padding-bottom:10px; }
+QPushButton#tabEmailLogin:checked, QPushButton#tabQrLogin:checked { color:#2563EB; border-bottom:2px solid #2563EB; }
+QLabel#lblEmailLabel, QLabel#lblPasswordLabel { font-size:13px; font-weight:600; color:#374151; }
 QLineEdit { min-height:46px; border:1px solid #E2E8F0; border-radius:10px; padding:0 12px; font-size:14px; color:#0F172A; background:#FFFFFF; }
 QLineEdit:focus { border:1px solid #2563EB; }
 QPushButton#btnTogglePassword { background:transparent; border:none; }
@@ -53,7 +53,7 @@ QLabel#lblNoAccount { font-size:13px; color:#64748B; }
      <layout class="QHBoxLayout" name="topBarLayout">
       <property name="leftMargin"><number>24</number></property>
       <property name="rightMargin"><number>24</number></property>
-      <item><widget class="QLabel" name="lblLogoIcon"><property name="minimumSize"><size><width>26</width><height>26</height></size></property><property name="maximumSize"><size><width>26</width><height>26</height></size></property><property name="pixmap"><pixmap>:/assets/logo/gsmartclass_mark.png</pixmap></property><property name="scaledContents"><bool>true</bool></property></widget></item>
+      <item><widget class="QLabel" name="lblLogoIcon"><property name="minimumSize"><size><width>26</width><height>26</height></size></property><property name="maximumSize"><size><width>26</width><height>26</height></size></property><property name="pixmap"><pixmap>:/logo/gsmartclass_mark.svg</pixmap></property><property name="scaledContents"><bool>true</bool></property></widget></item>
       <item><widget class="QLabel" name="lblAppName"><property name="text"><string>G-SmartClass</string></property></widget></item>
       <item><spacer name="topBarSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
       <item><widget class="QPushButton" name="btnMinimize"><property name="minimumSize"><size><width>32</width><height>32</height></size></property><property name="text"><string>—</string></property></widget></item>
@@ -79,7 +79,7 @@ QLabel#lblNoAccount { font-size:13px; color:#64748B; }
          <property name="rightMargin"><number>48</number></property>
          <property name="bottomMargin"><number>32</number></property>
          <property name="spacing"><number>10</number></property>
-         <item><widget class="QLabel" name="lblLogoBig"><property name="minimumSize"><size><width>120</width><height>120</height></size></property><property name="maximumSize"><size><width>120</width><height>120</height></size></property><property name="pixmap"><pixmap>:/assets/logo/gsmartclass_mark.png</pixmap></property><property name="scaledContents"><bool>true</bool></property><property name="alignment"><set>Qt::AlignHCenter</set></property></widget></item>
+         <item><widget class="QLabel" name="lblLogoBig"><property name="minimumSize"><size><width>120</width><height>120</height></size></property><property name="maximumSize"><size><width>120</width><height>120</height></size></property><property name="pixmap"><pixmap>:/logo/gsmartclass_mark.svg</pixmap></property><property name="scaledContents"><bool>true</bool></property><property name="alignment"><set>Qt::AlignHCenter</set></property></widget></item>
          <item><widget class="QLabel" name="lblBrandName"><property name="text"><string>&lt;span style=&quot;color:#2563EB;&quot;&gt;G&lt;/span&gt;&lt;span style=&quot;color:#0F172A;&quot;&gt;-SmartClass&lt;/span&gt;</string></property><property name="textFormat"><enum>Qt::RichText</enum></property><property name="alignment"><set>Qt::AlignHCenter</set></property></widget></item>
          <item><widget class="QLabel" name="lblTagline"><property name="text"><string>&lt;span style=&quot;color:#2563EB;&quot;&gt;Learn Smarter.&lt;/span&gt; &lt;span style=&quot;color:#10B981;&quot;&gt;Anywhere.&lt;/span&gt; &lt;span style=&quot;color:#7C3AED;&quot;&gt;Anytime.&lt;/span&gt;</string></property><property name="textFormat"><enum>Qt::RichText</enum></property><property name="alignment"><set>Qt::AlignHCenter</set></property></widget></item>
          <item><spacer name="spacerAfterBrand"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>28</height></size></property></spacer></item>
@@ -109,7 +109,7 @@ QLabel#lblNoAccount { font-size:13px; color:#64748B; }
               <property name="styleSheet"><string notr="true">background-color:#FFFFFF; border-radius:12px;</string></property>
               <layout class="QHBoxLayout" name="featureMaterialLayout">
                <property name="leftMargin"><number>14</number></property><property name="topMargin"><number>12</number></property><property name="rightMargin"><number>14</number></property><property name="bottomMargin"><number>12</number></property>
-               <item><widget class="QLabel" name="iconFeatureMaterial"><property name="minimumSize"><size><width>44</width><height>44</height></size></property><property name="maximumSize"><size><width>44</width><height>44</height></size></property><property name="styleSheet"><string notr="true">background-color:#DBEAFE;</string></property><property name="pixmap"><pixmap>:/assets/icon/lucide_book_open.png</pixmap></property><property name="scaledContents"><bool>true</bool></property></widget></item>
+               <item><widget class="QLabel" name="iconFeatureMaterial"><property name="minimumSize"><size><width>44</width><height>44</height></size></property><property name="maximumSize"><size><width>44</width><height>44</height></size></property><property name="styleSheet"><string notr="true">background-color:#DBEAFE;</string></property><property name="pixmap"><pixmap>:/icons/icon_book_open.svg</pixmap></property><property name="scaledContents"><bool>true</bool></property></widget></item>
                <item>
                 <layout class="QVBoxLayout" name="featureMaterialTextLayout">
                  <property name="spacing"><number>2</number></property>
@@ -125,7 +125,7 @@ QLabel#lblNoAccount { font-size:13px; color:#64748B; }
               <property name="styleSheet"><string notr="true">background-color:#FFFFFF; border-radius:12px;</string></property>
               <layout class="QHBoxLayout" name="featureCollabLayout">
                <property name="leftMargin"><number>14</number></property><property name="topMargin"><number>12</number></property><property name="rightMargin"><number>14</number></property><property name="bottomMargin"><number>12</number></property>
-               <item><widget class="QLabel" name="iconFeatureCollab"><property name="minimumSize"><size><width>44</width><height>44</height></size></property><property name="maximumSize"><size><width>44</width><height>44</height></size></property><property name="styleSheet"><string notr="true">background-color:#D1FAE5;</string></property><property name="pixmap"><pixmap>:/assets/icon/lucide_users.png</pixmap></property><property name="scaledContents"><bool>true</bool></property></widget></item>
+               <item><widget class="QLabel" name="iconFeatureCollab"><property name="minimumSize"><size><width>44</width><height>44</height></size></property><property name="maximumSize"><size><width>44</width><height>44</height></size></property><property name="styleSheet"><string notr="true">background-color:#D1FAE5;</string></property><property name="pixmap"><pixmap>:/icons/icon_users.svg</pixmap></property><property name="scaledContents"><bool>true</bool></property></widget></item>
                <item>
                 <layout class="QVBoxLayout" name="featureCollabTextLayout">
                  <property name="spacing"><number>2</number></property>
@@ -141,7 +141,7 @@ QLabel#lblNoAccount { font-size:13px; color:#64748B; }
               <property name="styleSheet"><string notr="true">background-color:#FFFFFF; border-radius:12px;</string></property>
               <layout class="QHBoxLayout" name="featureProgressLayout">
                <property name="leftMargin"><number>14</number></property><property name="topMargin"><number>12</number></property><property name="rightMargin"><number>14</number></property><property name="bottomMargin"><number>12</number></property>
-               <item><widget class="QLabel" name="iconFeatureProgress"><property name="minimumSize"><size><width>44</width><height>44</height></size></property><property name="maximumSize"><size><width>44</width><height>44</height></size></property><property name="styleSheet"><string notr="true">background-color:#EDE9FE;</string></property><property name="pixmap"><pixmap>:/assets/icon/lucide_bar_chart.png</pixmap></property><property name="scaledContents"><bool>true</bool></property></widget></item>
+               <item><widget class="QLabel" name="iconFeatureProgress"><property name="minimumSize"><size><width>44</width><height>44</height></size></property><property name="maximumSize"><size><width>44</width><height>44</height></size></property><property name="styleSheet"><string notr="true">background-color:#EDE9FE;</string></property><property name="pixmap"><pixmap>:/icons/icon_bar_chart.svg</pixmap></property><property name="scaledContents"><bool>true</bool></property></widget></item>
                <item>
                 <layout class="QVBoxLayout" name="featureProgressTextLayout">
                  <property name="spacing"><number>2</number></property>
@@ -156,7 +156,7 @@ QLabel#lblNoAccount { font-size:13px; color:#64748B; }
           </widget>
          </item>
          <item><spacer name="spacerBeforeIllustration"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>20</height></size></property></spacer></item>
-         <item><widget class="QLabel" name="lblIllustration"><property name="minimumSize"><size><width>0</width><height>260</height></size></property><property name="maximumSize"><size><width>16777215</width><height>340</height></size></property><property name="pixmap"><pixmap>:/assets/illustration/login_student_desk.png</pixmap></property><property name="alignment"><set>Qt::AlignLeft|Qt::AlignBottom</set></property></widget></item>
+         <item><widget class="QLabel" name="lblIllustration"><property name="minimumSize"><size><width>0</width><height>260</height></size></property><property name="maximumSize"><size><width>16777215</width><height>340</height></size></property><property name="pixmap"><pixmap>:/illustrations/illustration_login.svg</pixmap></property><property name="alignment"><set>Qt::AlignLeft|Qt::AlignBottom</set></property></widget></item>
         </layout>
        </widget>
       </item>

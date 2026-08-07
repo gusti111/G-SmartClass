@@ -1,0 +1,59 @@
+/* light.qss - tema dasar aplikasi (mode terang).
+   Styling detail per-halaman sudah ditulis inline di masing-masing .ui;
+   file ini hanya menetapkan fallback font & warna global. */
+* {
+    font-family: "Poppins", "Inter", "Segoe UI", sans-serif;
+}
+QWidget {
+    color: #0F172A;
+}
+QToolTip {
+    background-color: #0F172A;
+    color: #FFFFFF;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    border: 1.5px solid #CBD5E1;
+    background: #FFFFFF;
+}
+QCheckBox::indicator:hover {
+    border: 1.5px solid #2563EB;
+}
+QCheckBox::indicator:checked {
+    border: 1.5px solid #2563EB;
+    background-color: #2563EB;
+    image: url(:/icons/icon_check_white.svg);
+}
+QComboBox {
+    padding: 0 10px;
+}
+QComboBox::drop-down {
+    border: none;
+    width: 24px;
+}
+QComboBox QAbstractItemView {
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    background: #FFFFFF;
+    selection-background-color: #EFF3FF;
+    selection-color: #2563EB;
+    outline: none;
+}
+QScrollBar:vertical {
+    background: transparent;
+    width: 8px;
+    margin: 0;
+}
+QScrollBar::handle:vertical {
+    background: #CBD5E1;
+    border-radius: 4px;
+    min-height: 24px;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}

@@ -1,0 +1,5 @@
+/* pair_device.qss - styling utama sudah inline di pair_device.ui. */
+QWidget#PairDeviceView[theme="dark"] QFrame#authCard {
+    background-color: #1E293B;
+    border: 1px solid #334155;
+}

@@ -1,0 +1,6 @@
+/* register.qss - styling utama sudah inline di register.ui.
+   Hook tambahan untuk override tema global bila diperlukan. */
+QWidget#RegisterView[theme="dark"] QFrame#authCard {
+    background-color: #1E293B;
+    border: 1px solid #334155;
+}

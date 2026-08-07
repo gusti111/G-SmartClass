@@ -1,0 +1,15 @@
+/* dark.qss - tema dasar aplikasi (mode gelap / Navy sesuai blueprint). */
+* {
+    font-family: "Poppins", "Inter", "Segoe UI", sans-serif;
+}
+QWidget {
+    background-color: #0F172A;
+    color: #E2E8F0;
+}
+QToolTip {
+    background-color: #1E293B;
+    color: #F8FAFC;
+    border: 1px solid #334155;
+    padding: 6px 10px;
+    border-radius: 6px;
+}

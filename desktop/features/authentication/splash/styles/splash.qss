@@ -1,0 +1,11 @@
+/* splash.qss
+   Styling utama Splash Screen sudah ditulis inline di splash.ui (styleSheet
+   pada widget root) agar tetap terlihat benar saat dibuka langsung di Qt
+   Designer. File ini disediakan sebagai hook tambahan/override tema, misalnya
+   saat dark mode diaktifkan secara global. */
+QWidget#SplashView[theme="dark"] {
+    background-color: #0F172A;
+}
+QWidget#SplashView[theme="dark"] QLabel#lblLoadingStatus {
+    color: #94A3B8;
+}

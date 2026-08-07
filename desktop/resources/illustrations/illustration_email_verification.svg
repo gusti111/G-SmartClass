@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300">
+  <ellipse cx="200" cy="272" rx="170" ry="14" fill="#DCE6FF"/>
+
+  <!-- laptop -->
+  <rect x="70" y="150" width="230" height="140" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="3"/>
+  <rect x="86" y="166" width="198" height="108" rx="4" fill="#EFF3FF"/>
+  <rect x="50" y="288" width="270" height="14" rx="7" fill="#CBD5E1"/>
+
+  <!-- envelope on screen -->
+  <rect x="120" y="188" width="120" height="76" rx="10" fill="#2563EB"/>
+  <path d="M120 200 L180 236 L240 200" fill="none" stroke="#1D4ED8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- check badge -->
+  <circle cx="240" cy="150" r="28" fill="#22C55E"/>
+  <path d="M228 150l8 8 16-18" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- mug -->
+  <rect x="330" y="220" width="42" height="38" rx="8" fill="#2563EB"/>
+  <path d="M372 230h10a10 10 0 0 1 0 20h-10" fill="none" stroke="#2563EB" stroke-width="6"/>
+  <text x="351" y="246" font-family="Poppins, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">G</text>
+
+  <!-- floating dots -->
+  <circle cx="330" cy="140" r="5" fill="#93C5FD"/>
+  <circle cx="352" cy="120" r="3.4" fill="#93C5FD"/>
+</svg>

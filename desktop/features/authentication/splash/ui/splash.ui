@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SplashView</class>
+ <widget class="QWidget" name="SplashView">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>1456</width><height>1030</height></rect>
+  </property>
+  <property name="windowTitle"><string>G-SmartClass</string></property>
+  <property name="styleSheet">
+   <string notr="true">
+QWidget#SplashView { background-color:#FFFFFF; font-family:'Poppins'; }
+QLabel#lblBrandName { font-size:28px; font-weight:700; }
+QLabel#lblTagline { font-size:14px; font-weight:600; }
+QLabel#lblLoadingStatus { font-size:13px; color:#64748B; }
+QProgressBar#loadingProgressBar { border:none; border-radius:4px; background-color:#E2E8F0; max-height:8px; min-height:8px; }
+QProgressBar#loadingProgressBar::chunk { background-color:#38BDF8; border-radius:4px; }
+QLabel#lblVersion { font-size:11px; color:#94A3B8; }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="rootLayout">
+   <item>
+    <spacer name="spacerTop">
+     <property name="orientation"><enum>Qt::Vertical</enum></property>
+     <property name="sizeHint" stdset="0"><size><width>20</width><height>40</height></size></property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QLabel" name="lblLogoBig">
+     <property name="minimumSize"><size><width>140</width><height>140</height></size></property>
+     <property name="maximumSize"><size><width>140</width><height>140</height></size></property>
+     <property name="pixmap"><pixmap>:/logo/gsmartclass_mark.svg</pixmap></property>
+     <property name="scaledContents"><bool>true</bool></property>
+     <property name="alignment"><set>Qt::AlignHCenter</set></property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lblBrandName">
+     <property name="text"><string>&lt;span style=&quot;color:#2563EB;&quot;&gt;G&lt;/span&gt;&lt;span style=&quot;color:#0F172A;&quot;&gt;-SmartClass&lt;/span&gt;</string></property>
+     <property name="textFormat"><enum>Qt::RichText</enum></property>
+     <property name="alignment"><set>Qt::AlignHCenter</set></property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lblTagline">
+     <property name="text"><string>&lt;span style=&quot;color:#2563EB;&quot;&gt;Learn Smarter.&lt;/span&gt; &lt;span style=&quot;color:#10B981;&quot;&gt;Anywhere.&lt;/span&gt; &lt;span style=&quot;color:#7C3AED;&quot;&gt;Anytime.&lt;/span&gt;</string></property>
+     <property name="textFormat"><enum>Qt::RichText</enum></property>
+     <property name="alignment"><set>Qt::AlignHCenter</set></property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="spacerMiddle">
+     <property name="orientation"><enum>Qt::Vertical</enum></property>
+     <property name="sizeHint" stdset="0"><size><width>20</width><height>32</height></size></property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QProgressBar" name="loadingProgressBar">
+     <property name="minimumSize"><size><width>240</width><height>8</height></size></property>
+     <property name="maximumSize"><size><width>240</width><height>8</height></size></property>
+     <property name="value"><number>0</number></property>
+     <property name="textVisible"><bool>false</bool></property>
+     <property name="alignment"><set>Qt::AlignHCenter</set></property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lblLoadingStatus">
+     <property name="text"><string>Menyiapkan aplikasi...</string></property>
+     <property name="alignment"><set>Qt::AlignHCenter</set></property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="spacerBottom">
+     <property name="orientation"><enum>Qt::Vertical</enum></property>
+     <property name="sizeHint" stdset="0"><size><width>20</width><height>40</height></size></property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QLabel" name="lblVersion">
+     <property name="text"><string>Version 1.0.0</string></property>
+     <property name="alignment"><set>Qt::AlignHCenter</set></property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="spacerFooter">
+     <property name="orientation"><enum>Qt::Vertical</enum></property>
+     <property name="sizeHint" stdset="0"><size><width>20</width><height>24</height></size></property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

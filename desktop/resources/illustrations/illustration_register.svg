@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300">
+  <ellipse cx="180" cy="272" rx="170" ry="14" fill="#DCE6FF"/>
+
+  <!-- book stack -->
+  <rect x="40" y="196" width="150" height="30" rx="6" fill="#16A34A"/>
+  <rect x="40" y="196" width="150" height="8" rx="4" fill="#22C55E"/>
+  <rect x="52" y="164" width="150" height="30" rx="6" fill="#2563EB"/>
+  <rect x="52" y="164" width="150" height="8" rx="4" fill="#60A5FA"/>
+  <rect x="64" y="132" width="150" height="30" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="64" y="132" width="150" height="8" rx="4" fill="#E2E8F0"/>
+
+  <!-- pen cup -->
+  <rect x="230" y="176" width="60" height="50" rx="8" fill="#2563EB"/>
+  <rect x="230" y="176" width="60" height="10" rx="5" fill="#1D4ED8"/>
+  <g stroke-linecap="round">
+    <line x1="245" y1="176" x2="238" y2="118" stroke="#0F172A" stroke-width="7"/>
+    <line x1="260" y1="176" x2="266" y2="112" stroke="#0F172A" stroke-width="7"/>
+    <line x1="238" y1="122" x2="234" y2="108" stroke="#F59E0B" stroke-width="7"/>
+    <line x1="266" y1="116" x2="270" y2="102" stroke="#F59E0B" stroke-width="7"/>
+  </g>
+
+  <!-- plant -->
+  <rect x="315" y="200" width="66" height="46" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <path d="M348 200 L340 150 Q348 118 356 150 L348 200Z" fill="#22C55E"/>
+  <path d="M348 200 L328 160 Q320 132 340 152 L348 200Z" fill="#16A34A"/>
+  <path d="M348 200 L368 158 Q380 128 358 150 L348 200Z" fill="#16A34A"/>
+</svg>

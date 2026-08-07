@@ -18,7 +18,7 @@ QLabel#lblBrandName { font-size:30px; font-weight:700; }
 QLabel#lblTagline { font-size:13px; font-weight:600; }
 QLabel#lblSectionTitle { font-size:20px; font-weight:700; color:#111827; }
 QLabel#lblSectionDesc { font-size:13px; color:#64748B; }
-QLabel[role="fieldLabel"] { font-size:13px; font-weight:600; color:#374151; }
+QLabel#lblFullNameLabel, QLabel#lblRoleLabel, QLabel#lblEmailLabel, QLabel#lblPhoneLabel, QLabel#lblPasswordLabel, QLabel#lblConfirmPasswordLabel, QLabel#lblInstitutionLabel { font-size:13px; font-weight:600; color:#374151; }
 QLabel#lblTitle { font-size:24px; font-weight:700; color:#0F172A; }
 QLabel#lblRoleBadge { font-size:20px; font-weight:700; color:#2563EB; }
 QLabel#lblSubtitle { font-size:13px; color:#64748B; }
@@ -30,8 +30,8 @@ QPushButton#btnRegisterGoogle { background-color:#FFFFFF; color:#1E293B; font-si
 QPushButton#btnBackToLogin, QPushButton#btnTermsLink, QPushButton#btnPrivacyLink, QPushButton#btnGoToLogin, QPushButton#btnHelp { background:transparent; border:none; color:#2563EB; font-size:13px; font-weight:600; text-align:left; }
 QPushButton#btnMinimize, QPushButton#btnMaximize, QPushButton#btnClose { background:transparent; border:none; font-size:14px; color:#374151; }
 QPushButton#btnClose:hover { background-color:#FEE2E2; border-radius:6px; }
-QPushButton[role="themeToggleBtn"] { border:none; border-radius:14px; padding:4px 10px; background:transparent; }
-QPushButton[role="themeToggleBtn"]:checked { background-color:#DBEAFE; }
+QPushButton#btnThemeLight, QPushButton#btnThemeDark { border:none; border-radius:14px; padding:4px 10px; background:transparent; }
+QPushButton#btnThemeLight:checked, QPushButton#btnThemeDark:checked { background-color:#DBEAFE; }
 QPushButton#btnTogglePassword, QPushButton#btnToggleConfirmPassword { background:transparent; border:none; }
 QFrame#footerBar { background-color:#FFFFFF; border-top:1px solid #E5E7EB; }
 QLabel#lblCopyright, QLabel#lblHaveAccount, QLabel#lblAnd { font-size:12px; color:#64748B; }
@@ -54,8 +54,8 @@ QLabel#lblCopyright, QLabel#lblHaveAccount, QLabel#lblAnd { font-size:12px; colo
        <widget class="QLabel" name="lblLogoIcon">
         <property name="minimumSize"><size><width>28</width><height>28</height></size></property>
         <property name="maximumSize"><size><width>28</width><height>28</height></size></property>
-        <property name="text"><string>G</string></property>
-        <property name="alignment"><set>Qt::AlignCenter</set></property>
+        <property name="pixmap"><pixmap>:/logo/gsmartclass_mark.svg</pixmap></property>
+        <property name="scaledContents"><bool>true</bool></property>
        </widget>
       </item>
       <item>
@@ -111,7 +111,7 @@ QLabel#lblCopyright, QLabel#lblHaveAccount, QLabel#lblAnd { font-size:12px; colo
           <widget class="QLabel" name="lblLogoBig">
            <property name="minimumSize"><size><width>140</width><height>140</height></size></property>
            <property name="maximumSize"><size><width>140</width><height>140</height></size></property>
-           <property name="pixmap"><pixmap>:/assets/logo/gsmartclass_mark.png</pixmap></property>
+           <property name="pixmap"><pixmap>:/logo/gsmartclass_mark.svg</pixmap></property>
            <property name="scaledContents"><bool>true</bool></property>
           </widget>
          </item>
@@ -163,7 +163,9 @@ QLabel#lblCopyright, QLabel#lblHaveAccount, QLabel#lblAnd { font-size:12px; colo
                 <widget class="QLabel" name="iconFeatureManage">
                  <property name="minimumSize"><size><width>44</width><height>44</height></size></property>
                  <property name="maximumSize"><size><width>44</width><height>44</height></size></property>
-                 <property name="pixmap"><pixmap>:/assets/icon/lucide_graduation_cap.png</pixmap></property>
+                 <property name="styleSheet"><string notr="true">background-color:#EFF3FF; border-radius:12px; padding:9px;</string></property>
+                 <property name="alignment"><set>Qt::AlignCenter</set></property>
+                 <property name="pixmap"><pixmap>:/icons/icon_graduation_cap.svg</pixmap></property>
                  <property name="scaledContents"><bool>true</bool></property>
                 </widget>
                </item>
@@ -199,7 +201,9 @@ QLabel#lblCopyright, QLabel#lblHaveAccount, QLabel#lblAnd { font-size:12px; colo
                 <widget class="QLabel" name="iconFeatureChat">
                  <property name="minimumSize"><size><width>44</width><height>44</height></size></property>
                  <property name="maximumSize"><size><width>44</width><height>44</height></size></property>
-                 <property name="pixmap"><pixmap>:/assets/icon/lucide_message_circle.png</pixmap></property>
+                 <property name="styleSheet"><string notr="true">background-color:#EFF3FF; border-radius:12px; padding:9px;</string></property>
+                 <property name="alignment"><set>Qt::AlignCenter</set></property>
+                 <property name="pixmap"><pixmap>:/icons/icon_message_circle.svg</pixmap></property>
                  <property name="scaledContents"><bool>true</bool></property>
                 </widget>
                </item>
@@ -235,7 +239,9 @@ QLabel#lblCopyright, QLabel#lblHaveAccount, QLabel#lblAnd { font-size:12px; colo
                 <widget class="QLabel" name="iconFeatureSecure">
                  <property name="minimumSize"><size><width>44</width><height>44</height></size></property>
                  <property name="maximumSize"><size><width>44</width><height>44</height></size></property>
-                 <property name="pixmap"><pixmap>:/assets/icon/lucide_shield_check.png</pixmap></property>
+                 <property name="styleSheet"><string notr="true">background-color:#EFF3FF; border-radius:12px; padding:9px;</string></property>
+                 <property name="alignment"><set>Qt::AlignCenter</set></property>
+                 <property name="pixmap"><pixmap>:/icons/icon_shield_check.svg</pixmap></property>
                  <property name="scaledContents"><bool>true</bool></property>
                 </widget>
                </item>
@@ -273,7 +279,7 @@ QLabel#lblCopyright, QLabel#lblHaveAccount, QLabel#lblAnd { font-size:12px; colo
           <widget class="QLabel" name="lblIllustration">
            <property name="minimumSize"><size><width>0</width><height>180</height></size></property>
            <property name="maximumSize"><size><width>16777215</width><height>220</height></size></property>
-           <property name="pixmap"><pixmap>:/assets/illustration/register_books.png</pixmap></property>
+           <property name="pixmap"><pixmap>:/illustrations/illustration_register.svg</pixmap></property>
            <property name="alignment"><set>Qt::AlignLeft|Qt::AlignBottom</set></property>
           </widget>
          </item>
@@ -320,7 +326,7 @@ QLabel#lblCopyright, QLabel#lblHaveAccount, QLabel#lblAnd { font-size:12px; colo
                  <property name="text"><string>☀</string></property>
                  <property name="checkable"><bool>true</bool></property>
                  <property name="checked"><bool>true</bool></property>
-                 <property name="property" stdset="0"><string>role</string></property>
+                 
                 </widget>
                </item>
                <item>
@@ -376,7 +382,7 @@ QLabel#lblCopyright, QLabel#lblHaveAccount, QLabel#lblAnd { font-size:12px; colo
               <item row="0" column="0">
                <layout class="QVBoxLayout" name="fieldFullNameLayout">
                 <property name="spacing"><number>6</number></property>
-                <item><widget class="QLabel" name="lblFullNameLabel"><property name="text"><string>Nama Lengkap</string></property><property name="property" stdset="0"><string>role</string></property></widget></item>
+                <item><widget class="QLabel" name="lblFullNameLabel"><property name="text"><string>Nama Lengkap</string></property></widget></item>
                 <item><widget class="QLineEdit" name="inputFullName"><property name="placeholderText"><string>Masukkan nama lengkap Anda</string></property></widget></item>
                </layout>
               </item>
@@ -451,7 +457,7 @@ QLabel#lblCopyright, QLabel#lblHaveAccount, QLabel#lblAnd { font-size:12px; colo
                <property name="bottomMargin"><number>0</number></property>
                <property name="spacing"><number>4</number></property>
                <item><widget class="QCheckBox" name="chkAgreement"><property name="text"><string>Saya menyetujui</string></property><property name="checked"><bool>true</bool></property></widget></item>
-               <item><widget class="QPushButton" name="btnTermsLink"><property name="text"><string>Syarat &amp; Ketentuan</string></property></widget></item>
+               <item><widget class="QPushButton" name="btnTermsLink"><property name="text"><string>Syarat &amp;&amp; Ketentuan</string></property></widget></item>
                <item><widget class="QLabel" name="lblAnd"><property name="text"><string>dan</string></property></widget></item>
                <item><widget class="QPushButton" name="btnPrivacyLink"><property name="text"><string>Kebijakan Privasi</string></property></widget></item>
                <item>

@@ -1,0 +1,52 @@
+2026-08-03 13:37:33 | DEBUG    | desktop.routes.router | Membuat instance view untuk route 'splash'
+2026-08-03 13:37:34 | INFO     | desktop.features.authentication.splash.controllers.splash_controller | Splash: memulai inisialisasi aplikasi.
+2026-08-03 13:37:34 | DEBUG    | desktop.routes.router | Navigasi ke route 'splash'
+2026-08-03 13:37:34 | INFO     | desktop.app | G-SmartClass berhasil dijalankan.
+2026-08-03 13:37:34 | INFO     | desktop.middleware.auth_guard | Tidak ada session valid -> Login
+2026-08-03 13:37:36 | INFO     | desktop.features.authentication.splash.controllers.splash_controller | Splash: inisialisasi selesai, mengarahkan ke 'login'.
+2026-08-03 13:37:36 | DEBUG    | desktop.routes.router | Membuat instance view untuk route 'login'
+2026-08-03 13:37:36 | DEBUG    | desktop.routes.router | Navigasi ke route 'login'
+2026-08-03 13:37:41 | DEBUG    | desktop.features.authentication.login.controllers.login_controller | QR login session dibuat (lokal, belum tersambung backend): 8450d7c1-ba61-4c2d-bd64-2d868fedc3a9
+2026-08-03 13:37:41 | DEBUG    | desktop.features.authentication.login.controllers.login_controller | QR login session dibuat (lokal, belum tersambung backend): f99a8213-fb21-49ab-ad05-50c1277df62f
+2026-08-03 13:37:49 | DEBUG    | desktop.features.authentication.login.controllers.login_controller | QR login session dibuat (lokal, belum tersambung backend): f46da441-a828-40b3-9e50-0b7613a53261
+2026-08-03 13:37:49 | DEBUG    | desktop.features.authentication.login.controllers.login_controller | QR login session dibuat (lokal, belum tersambung backend): 0cac5322-dc8b-437b-9749-d4799485690a
+2026-08-03 13:45:56 | DEBUG    | desktop.routes.router | Membuat instance view untuk route 'splash'
+2026-08-03 13:45:57 | INFO     | desktop.features.authentication.splash.controllers.splash_controller | Splash: memulai inisialisasi aplikasi.
+2026-08-03 13:45:57 | DEBUG    | desktop.routes.router | Navigasi ke route 'splash'
+2026-08-03 13:45:57 | INFO     | desktop.app | G-SmartClass berhasil dijalankan.
+2026-08-03 13:45:57 | INFO     | desktop.middleware.auth_guard | Tidak ada session valid -> Login
+2026-08-03 13:45:59 | INFO     | desktop.features.authentication.splash.controllers.splash_controller | Splash: inisialisasi selesai, mengarahkan ke 'login'.
+2026-08-03 13:45:59 | DEBUG    | desktop.routes.router | Membuat instance view untuk route 'login'
+2026-08-03 13:45:59 | DEBUG    | desktop.routes.router | Navigasi ke route 'login'
+2026-08-03 13:46:05 | DEBUG    | desktop.routes.router | Membuat instance view untuk route 'register'
+2026-08-03 13:46:05 | DEBUG    | desktop.routes.router | Navigasi ke route 'register'
+2026-08-03 13:46:17 | DEBUG    | desktop.routes.router | Navigasi ke route 'login'
+2026-08-03 13:46:19 | DEBUG    | desktop.routes.router | Membuat instance view untuk route 'forgot_password'
+2026-08-03 13:46:19 | DEBUG    | desktop.routes.router | Navigasi ke route 'forgot_password'
+2026-08-03 13:46:23 | DEBUG    | desktop.routes.router | Navigasi ke route 'login'
+2026-08-07 14:51:01 | DEBUG    | desktop.routes.router | Membuat instance view untuk route 'splash'
+2026-08-07 14:51:09 | INFO     | desktop.features.authentication.splash.controllers.splash_controller | Splash: memulai inisialisasi aplikasi.
+2026-08-07 14:51:09 | DEBUG    | desktop.routes.router | Navigasi ke route 'splash'
+2026-08-07 14:51:09 | INFO     | desktop.app | G-SmartClass berhasil dijalankan.
+2026-08-07 14:51:09 | INFO     | desktop.middleware.auth_guard | Tidak ada session valid -> Login
+2026-08-07 14:51:11 | INFO     | desktop.features.authentication.splash.controllers.splash_controller | Splash: inisialisasi selesai, mengarahkan ke 'login'.
+2026-08-07 14:51:11 | DEBUG    | desktop.routes.router | Membuat instance view untuk route 'login'
+2026-08-07 14:51:11 | DEBUG    | desktop.routes.router | Navigasi ke route 'login'
+2026-08-07 14:51:43 | DEBUG    | desktop.features.authentication.login.controllers.login_controller | QR login session dibuat (lokal, belum tersambung backend): 75e4821d-27b4-4a12-8318-fe54938541ed
+2026-08-07 14:51:43 | DEBUG    | desktop.features.authentication.login.controllers.login_controller | QR login session dibuat (lokal, belum tersambung backend): 091ac494-f267-470a-a08f-d0c85b782af9
+2026-08-07 14:52:08 | DEBUG    | desktop.routes.router | Membuat instance view untuk route 'register'
+2026-08-07 14:52:08 | DEBUG    | desktop.routes.router | Navigasi ke route 'register'
+2026-08-07 14:53:04 | DEBUG    | desktop.routes.router | Navigasi ke route 'login'
+2026-08-07 14:53:09 | DEBUG    | desktop.routes.router | Membuat instance view untuk route 'forgot_password'
+2026-08-07 14:53:09 | DEBUG    | desktop.routes.router | Navigasi ke route 'forgot_password'
+2026-08-07 14:53:16 | DEBUG    | desktop.routes.router | Navigasi ke route 'login'
+2026-08-07 15:07:13 | DEBUG    | desktop.routes.router | Membuat instance view untuk route 'splash'
+2026-08-07 15:07:15 | INFO     | desktop.features.authentication.splash.controllers.splash_controller | Splash: memulai inisialisasi aplikasi.
+2026-08-07 15:07:15 | DEBUG    | desktop.routes.router | Navigasi ke route 'splash'
+2026-08-07 15:07:15 | INFO     | desktop.app | G-SmartClass berhasil dijalankan.
+2026-08-07 15:07:15 | INFO     | desktop.middleware.auth_guard | Tidak ada session valid -> Login
+2026-08-07 15:07:17 | INFO     | desktop.features.authentication.splash.controllers.splash_controller | Splash: inisialisasi selesai, mengarahkan ke 'login'.
+2026-08-07 15:07:17 | DEBUG    | desktop.routes.router | Membuat instance view untuk route 'login'
+2026-08-07 15:07:17 | DEBUG    | desktop.routes.router | Navigasi ke route 'login'
+2026-08-07 15:08:00 | DEBUG    | desktop.features.authentication.login.controllers.login_controller | QR login session dibuat (lokal, belum tersambung backend): 7aa31bb2-b32e-4af2-aecd-951f2711a96e
+2026-08-07 15:08:00 | DEBUG    | desktop.features.authentication.login.controllers.login_controller | QR login session dibuat (lokal, belum tersambung backend): 009961d4-3439-474c-8974-522ca2a65121

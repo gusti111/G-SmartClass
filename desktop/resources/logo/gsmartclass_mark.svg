@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<defs>
+  <linearGradient id="gLogo" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#60A5FA"/>
+    <stop offset="100%" stop-color="#1D4ED8"/>
+  </linearGradient>
+</defs>
+<path d="M100 14 L168 54 V146 L100 186 L32 146 V54 Z" fill="none" stroke="url(#gLogo)" stroke-width="16" stroke-linejoin="round"/>
+<path d="M114 70 H150 V96 H126" fill="none" stroke="url(#gLogo)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M150 96 V110" fill="none" stroke="url(#gLogo)" stroke-width="16" stroke-linecap="round"/>
+<g stroke="#0F172A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+  <path d="M40 150 Q70 132 100 150 Q130 132 160 150" />
+  <path d="M100 150 V128"/>
+</g>
+<g transform="translate(128,96) rotate(38)">
+  <rect x="-6" y="-46" width="12" height="70" rx="4" fill="#0F172A"/>
+  <rect x="-6" y="-52" width="12" height="10" rx="3" fill="#1D4ED8"/>
+  <polygon points="-6,24 6,24 0,38" fill="#0F172A"/>
+</g>
+</svg>

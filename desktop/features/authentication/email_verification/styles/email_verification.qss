@@ -1,0 +1,5 @@
+/* email_verification.qss - styling utama sudah inline di email_verification.ui. */
+QWidget#EmailVerificationView[theme="dark"] QFrame#authCard {
+    background-color: #1E293B;
+    border: 1px solid #334155;
+}

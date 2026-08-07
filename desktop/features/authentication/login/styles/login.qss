@@ -1,0 +1,9 @@
+/* login.qss - styling utama sudah inline di login.ui.
+   File ini disediakan sebagai hook override tema (light/dark) global. */
+QWidget#LoginView[theme="dark"] QFrame#authCard {
+    background-color: #1E293B;
+    border: 1px solid #334155;
+}
+QWidget#LoginView[theme="dark"] QLabel#lblCardTitle {
+    color: #F8FAFC;
+}

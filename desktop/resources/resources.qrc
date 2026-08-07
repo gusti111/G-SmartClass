@@ -1,0 +1,42 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="logo/gsmartclass_mark.svg">logo/gsmartclass_mark.svg</file>
+    <file alias="icons/icon_apple.svg">icons/icon_apple.svg</file>
+    <file alias="icons/icon_arrow_left.svg">icons/icon_arrow_left.svg</file>
+    <file alias="icons/icon_bar_chart.svg">icons/icon_bar_chart.svg</file>
+    <file alias="icons/icon_book_open.svg">icons/icon_book_open.svg</file>
+    <file alias="icons/icon_building.svg">icons/icon_building.svg</file>
+    <file alias="icons/icon_check_circle.svg">icons/icon_check_circle.svg</file>
+    <file alias="icons/icon_check_white.svg">icons/icon_check_white.svg</file>
+    <file alias="icons/icon_close.svg">icons/icon_close.svg</file>
+    <file alias="icons/icon_devices.svg">icons/icon_devices.svg</file>
+    <file alias="icons/icon_eye.svg">icons/icon_eye.svg</file>
+    <file alias="icons/icon_eye_off.svg">icons/icon_eye_off.svg</file>
+    <file alias="icons/icon_globe.svg">icons/icon_globe.svg</file>
+    <file alias="icons/icon_google.svg">icons/icon_google.svg</file>
+    <file alias="icons/icon_graduation_cap.svg">icons/icon_graduation_cap.svg</file>
+    <file alias="icons/icon_help_circle.svg">icons/icon_help_circle.svg</file>
+    <file alias="icons/icon_keyboard.svg">icons/icon_keyboard.svg</file>
+    <file alias="icons/icon_lock.svg">icons/icon_lock.svg</file>
+    <file alias="icons/icon_mail.svg">icons/icon_mail.svg</file>
+    <file alias="icons/icon_mail_check.svg">icons/icon_mail_check.svg</file>
+    <file alias="icons/icon_mail_lock.svg">icons/icon_mail_lock.svg</file>
+    <file alias="icons/icon_maximize.svg">icons/icon_maximize.svg</file>
+    <file alias="icons/icon_message_circle.svg">icons/icon_message_circle.svg</file>
+    <file alias="icons/icon_microsoft.svg">icons/icon_microsoft.svg</file>
+    <file alias="icons/icon_minimize.svg">icons/icon_minimize.svg</file>
+    <file alias="icons/icon_moon.svg">icons/icon_moon.svg</file>
+    <file alias="icons/icon_phone.svg">icons/icon_phone.svg</file>
+    <file alias="icons/icon_qr_frame.svg">icons/icon_qr_frame.svg</file>
+    <file alias="icons/icon_send.svg">icons/icon_send.svg</file>
+    <file alias="icons/icon_shield_check.svg">icons/icon_shield_check.svg</file>
+    <file alias="icons/icon_sun.svg">icons/icon_sun.svg</file>
+    <file alias="icons/icon_user.svg">icons/icon_user.svg</file>
+    <file alias="icons/icon_users.svg">icons/icon_users.svg</file>
+    <file alias="illustrations/illustration_email_verification.svg">illustrations/illustration_email_verification.svg</file>
+    <file alias="illustrations/illustration_forgot_password.svg">illustrations/illustration_forgot_password.svg</file>
+    <file alias="illustrations/illustration_login.svg">illustrations/illustration_login.svg</file>
+    <file alias="illustrations/illustration_pair_device.svg">illustrations/illustration_pair_device.svg</file>
+    <file alias="illustrations/illustration_register.svg">illustrations/illustration_register.svg</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,38 @@
+# Environment
+.env
+.env.local
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Desktop cache & secrets
+desktop/cache/session/*.enc
+desktop/cache/session/*.key
+desktop/cache/session/metadata.json
+desktop/cache/images/*
+desktop/cache/files/*
+desktop/cache/temp/*
+!desktop/cache/**/.gitkeep
+
+# Firebase
+firebase/.runtimeconfig.json
+functions/node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+*.spec

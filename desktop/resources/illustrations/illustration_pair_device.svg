@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300">
+  <ellipse cx="200" cy="272" rx="170" ry="14" fill="#DCE6FF"/>
+
+  <!-- laptop -->
+  <rect x="50" y="150" width="200" height="122" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="3"/>
+  <rect x="64" y="164" width="172" height="94" rx="4" fill="#EFF3FF"/>
+  <rect x="34" y="272" width="232" height="13" rx="6.5" fill="#CBD5E1"/>
+  <text x="150" y="220" font-family="Poppins, sans-serif" font-size="34" font-weight="700" fill="#2563EB" text-anchor="middle">G</text>
+
+  <!-- dashed connection -->
+  <path d="M256 200 Q300 190 320 190" stroke="#93C5FD" stroke-width="3" fill="none" stroke-dasharray="5 7"/>
+
+  <!-- phone with QR -->
+  <rect x="316" y="140" width="76" height="140" rx="14" fill="#0F172A"/>
+  <rect x="324" y="156" width="60" height="98" rx="4" fill="#FFFFFF"/>
+  <g fill="#0F172A">
+    <rect x="330" y="162" width="16" height="16"/>
+    <rect x="362" y="162" width="16" height="16"/>
+    <rect x="330" y="194" width="16" height="16"/>
+    <rect x="350" y="180" width="10" height="10"/>
+    <rect x="366" y="196" width="12" height="12"/>
+    <rect x="346" y="214" width="12" height="12"/>
+    <rect x="330" y="228" width="16" height="16"/>
+    <rect x="362" y="228" width="16" height="16"/>
+  </g>
+
+  <!-- plant -->
+  <rect x="20" y="222" width="46" height="34" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <path d="M43 222 L37 186 Q43 164 49 186 L43 222Z" fill="#22C55E"/>
+  <path d="M43 222 L27 192 Q22 174 36 190 L43 222Z" fill="#16A34A"/>
+</svg>
