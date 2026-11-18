@@ -27,6 +27,22 @@ The repository is still in development. Its module structure is broader than the
 | Analytics | Analytics feature module |
 | Platform integration | Firebase REST services, environment configuration, task runner, Qt resources |
 
+## Current desktop startup flow
+
+```mermaid
+flowchart TD
+    A["Run desktop application"] --> B["Load local environment"]
+    B --> C["Initialize QApplication and theme"]
+    C --> D["Create main window and router"]
+    D --> E["Register authentication views"]
+    E --> F["Show splash screen"]
+    F --> G["Login / registration / recovery"]
+    G --> H["Email verification or device pairing"]
+    H --> I["Dashboard route placeholder"]
+```
+
+The repository also contains modular academic, administration, analytics, and AI feature directories. They are part of the source structure, but the current desktop bootstrap does not yet wire all of them into a completed application journey.
+
 ## Technology
 
 - Python
